@@ -1,0 +1,128 @@
+\documentclass[11pt,letterpaper]{moderncv}
+
+% Modern CV theme
+\moderncvstyle{banking}  % Closer to the clean PDF look
+\moderncvcolor{black}    % Black color scheme
+
+% Character encoding and page setup
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1.5cm, top=1.25cm, bottom=1.25cm]{geometry}
+\usepackage{tgtermes}    % TeX Gyre Termes font (similar to Times New Roman)
+\renewcommand{\familydefault}{\rmdefault}
+\renewcommand{\labelitemi}{\textbullet} % Bullet point style
+
+% Adjust spacing and formatting
+\setlength{\parskip}{0.5em}
+\setlength{\parindent}{0pt}
+\setlength{\hintscolumnwidth}{0.2\textwidth}
+\setlength{\separatorcolumnwidth}{0.025\textwidth}
+\setlength{\maincolumnwidth}{0.775\textwidth}
+\setlength{\footskip}{14pt}
+
+% Custom commands for header
+\usepackage{fontawesome5}
+
+% Personal data
+\name{Lucas}{Little}
+
+\begin{document}
+\makecvtitle
+
+% Custom contact info line
+\vspace{-1cm}
+\begin{center}
+\footnotesize
+\faMapMarker*~{Concord, NC, USA} \hspace{0.8em}
+\faMobile*~\href{tel:+17047017779}{+1 704 701 7779} \hspace{0.8em}
+\faEnvelope~\href{mailto:me@lukelittle.com}{me@lukelittle.com} \hspace{0.8em}
+\faLinkedin~\href{https://linkedin.com/in/lucaslittle}{in/lucaslittle} \hspace{0.8em}
+\faGithub~\href{https://github.com/lukelittle}{github.com/lukelittle}
+\end{center}
+\vspace{0.1cm}
+
+% Summary Section
+\section{Summary}
+Software engineering leader with deep expertise in AWS cloud solutions, infrastructure automation, and team leadership. Proven track record of driving cost savings, optimizing cloud architectures, and improving operational efficiencies. Skilled in modernizing financial data processes, implementing Infrastructure as Code (IaC), and leading large-scale cloud migrations to enhance scalability, security, and compliance. Adept at fostering cross-functional collaboration and aligning technology strategies with business objectives.
+
+% Experience Section
+\section{Experience}
+\cventry{Dec 2020 -- Present}{Software Engineering Manager, Ally Invest}{Ally Financial}{Charlotte, NC}{}{
+\begin{itemize}
+    \item Led a team of 8 direct reports and oversaw 10+ indirect reports, aligning strategies with business goals and fostering collaboration.
+    \item Modernized broker-dealer data processes, improving CAT and 606(a) reporting accuracy and enhancing data integrity.
+    \item Achieved 100\% Infrastructure as Code (IaC) coverage, migrating 30+ applications to Terraform, ensuring 95\% enterprise compliance.
+    \item Reduced operational costs by 40\%, migrating 200+ batch ETL jobs to AWS and eliminating 16+ hours/month of manual patching.
+    \item Decreased Kafka-related expenses by 60\%, reducing EC2 maintenance overhead by \$5K/month through refactoring.
+    \item Cut \$100K in annual costs by decommissioning Redshift, increasing system availability with zero monthly downtime.
+    \item Saved \$30K annually by streamlining data validation, eliminating redundant tooling.
+    \item Lowered licensing costs by \$20K/year, centralizing scheduling systems to improve operational efficiency.
+\end{itemize}}
+
+\cventry{Mar 2019 -- Dec 2019}{Senior Software Engineer, Enterprise Technology Operations}{Ally Financial}{Charlotte, NC}{}{
+\begin{itemize}
+    \item Facilitated AWS cloud adoption across 7+ business lines, establishing a streamlined cloud project intake pipeline.
+    \item Improved deployment efficiency by 40\% by standardizing Terraform modules, reducing infrastructure provisioning time by 50\%.
+    \item Enhanced security monitoring by architecting a centralized log management system with Splunk, increasing log availability by 20\% for 50+ teams.
+\end{itemize}}
+
+\cventry{Mar 2019 -- Dec 2019}{Senior Software Engineer, Ally Invest}{Ally Financial}{Charlotte, NC}{}{
+\begin{itemize}
+    \item Reduced OLTP database load by 60\% by implementing a real-time analytics platform with Qlik CDC and Amazon MSK, establishing a standardized AWS-based application framework.
+    \item Ensured 100\% regulatory compliance for intra-firm money movement validation by leveraging Airflow, Python, and Redshift.
+\end{itemize}}
+
+\cventry{Jan 2019 -- Mar 2019}{Senior Software Engineer, Chief Technology Office}{The Vanguard Group}{Charlotte, NC}{}{
+\begin{itemize}
+    \item Achieved \$2M in annual savings by optimizing EMR costs through Service Catalog-based strategies.
+\end{itemize}}
+
+\cventry{Jun 2017 -- Jan 2019}{Software Engineer, Chief Technology Office}{Vanguard}{Charlotte, NC}{}{
+\begin{itemize}
+    \item Migrated 1.5 petabytes of data to AWS S3, enhancing data management efficiency and scalability.
+    \item Saved 40 hours per month by automating redundant tasks, increasing operational efficiency.
+    \item Facilitated enterprise-wide EMR adoption by developing reference architectures and custom plugins, streamlining deployment and usage.
+\end{itemize}}
+
+\cventry{May 2016 -- Jun 2017}{Software Engineer, Enterprise Shared Services}{Vanguard}{Charlotte, NC}{}{
+\begin{itemize}
+    \item Expanded Hadoop capacity by 40\%, enabling scalability for new data-driven projects.
+    \item Accelerated AWS EMR adoption by migrating IBM Tealeaf web analytics data to the cloud, enhancing accessibility and performance.
+\end{itemize}}
+
+\cventry{Nov 2009 -- May 2016}{Managing Member}{Bake Crew}{Concord, NC}{}{
+\begin{itemize}
+    \item Co-founded a consulting firm, implementing automation systems to enhance efficiency for global commercial bakeries.
+    \item Built and maintained relationships with 10+ international clients, driving long-term business growth.
+\end{itemize}}
+
+\section{Education}
+\cventry{2026}{Masters in Computer Science}{University of Colorado - Boulder}{Boulder, Colorado}{}{}
+\cventry{2009}{Bachelor of Science in Business Administration}{University of North Carolina at Charlotte}{Charlotte, NC}{}{}
+
+% Certifications Section
+\section{Certifications}
+\cvitem{AWS Advanced Networking - Specialty}{Amazon Web Services, 2021}
+\cvitem{AWS Data Analytics - Specialty}{Amazon Web Services, 2021}
+\cvitem{AWS Certified Database - Specialty}{Amazon Web Services, 2019}
+\cvitem{AWS Certified DevOps Engineer - Professional}{Amazon Web Services, 2019}
+\cvitem{AWS Certified Security - Specialty}{Amazon Web Services, 2018}
+\cvitem{AWS Certified Developer - Associate}{Amazon Web Services, 2018}
+\cvitem{AWS Certified Cloud Practitioner}{Amazon Web Services, 2018}
+\cvitem{AWS Certified SysOps Administrator - Associate}{Amazon Web Services, 2018}
+\cvitem{AWS Certified Solutions Architect - Professional}{Amazon Web Services, 2018}
+\cvitem{AWS Certified Solutions Architect - Associate}{Amazon Web Services, 2017}
+
+% Involvement Section
+\section{Involvement}
+\cventry{2019 -- Present}{Subject Matter Expert (SME), AWS Certification Programs}{Amazon Web Services (AWS)}{Remote}{}{
+\begin{itemize}
+    \item Collaborated with AWS Training and Certification teams in 10+ workshops, shaping curriculum and examination standards.
+    \item Contributed to the Job Task Analysis (JTA) for AWS Solutions Architect – Professional, helping design its structure.
+\end{itemize}}
+
+% Skills Section
+\section{Skills}
+\cvitem{Technical}{Terraform, Cloud Engineering, Splunk, Java, Python, Go, Qlik CDC, Amazon MSK, Airflow, Hadoop, AWS S3, EMR}
+\cvitem{Business}{Data Management, Automation, Cost Optimization, AWS}
+
+\end{document}
